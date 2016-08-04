@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:id="@+id/ll_main"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Design登录"
+               android:id="@+id/btn_login"
+               android:background="#44ff2d" />
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="类似微信红包旋转效果"
+               android:id="@+id/btn_image_animation"
+               android:background="#503EDE" />
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Afinal-DB实例"
+               android:id="@+id/btn_afinal"
+               android:background="#DE31D1" />
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="MVP"
+               android:id="@+id/btn_mvp"
+               android:background="#EAF729" />
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Dagger2"
+               android:id="@+id/btn_dagger"
+               android:background="#F74B2C" />
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="demo实例"
+               android:id="@+id/btn_demo"
+               android:background="#DE31D1" />
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Retrofit"
+               android:id="@+id/btn_retrofit"
+               android:background="#2CE517" />
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="RxJava"
+               android:id="@+id/btn_rxjava"
+               android:background="#503EDE" />
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Rxjava+retrofit"
+               android:id="@+id/btn_rxjava_retrofit"
+               android:background="#F74B2C" />
+
+       </LinearLayout>
+   </ScrollView>
+
+</RelativeLayout>

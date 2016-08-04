@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!-- pop -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pop_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:background="@drawable/shape_redpacket_bg">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_margin="15dp"
+            android:layout_gravity="left"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/red_close" />
+
+        <TextView
+            android:textColor="#FEDEAD"
+            android:textSize="14sp"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/red_logo"
+            android:text="知晓" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="#FEDEAD"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="给您发了一个红包" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:textColor="#FEDEAD"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜您获得,新手任务的红包!" />
+
+        <!--打开红包-->
+        <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/xian"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/image_animation_drawable"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
