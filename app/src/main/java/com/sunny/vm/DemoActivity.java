@@ -1,6 +1,8 @@
 package com.sunny.vm;
 
+import android.app.VoiceInteractor;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -8,8 +10,13 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.squareup.okhttp.Request;
 import com.sunny.R;
 import com.sunny.base.BaseActivity;
+import com.sunny.bean.GetIpInfoResponse;
+import com.sunny.http.HttpManager;
+
+import java.util.HashMap;
 
 /**
  * Created by toreal on 2016/7/25.
@@ -37,7 +44,7 @@ public class DemoActivity extends BaseActivity {
 
     @Override
     public void initData(Intent intent) {
-
+        httpTest();
     }
 
 //    @Override
@@ -76,6 +83,23 @@ public class DemoActivity extends BaseActivity {
 //                return false;
 //            }
 //        });
+    }
+
+    public void httpTest(){
+        HashMap<String,String> map = new HashMap<>();
+                map.put("loginPhone","13717833151");
+
+        HttpManager.postAsyn("http://192.168.0.12:8090/gateway/user/getUserList", new HttpManager.ResultCallback<GetIpInfoResponse>() {
+            @Override
+            public void onError(Request request, Exception e) {
+
+            }
+
+            @Override
+            public void onResponse(GetIpInfoResponse response) {
+
+            }
+        },map);
     }
 
     @Override

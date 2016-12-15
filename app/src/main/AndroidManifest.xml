@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.sunny" >
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
@@ -27,6 +28,23 @@
         <activity android:name=".vm.DemoActivity"/>
         <activity android:name=".vm.rxjava.RxjavaActivity"/>
         <activity android:name=".vm.rxjava_retrofit.DemoActivity"/>
+        <activity android:name=".test.IndexAdvActivity"/>
+        <activity android:name=".vm.video.VideoActivity"/>
+        <activity android:name=".vm.WMActivity"/>
+        <activity android:name=".vm.GlideImageDemoActivity"/>
+        <activity android:name=".vm.adv.AdvShowActivity"/>
+        <activity android:name=".vm.refresh.SwipeRefreshLayoutActivity"/>
+
+        <activity android:name="com.mzc.ailiwm.ShowPageActivity" />
     </application>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"
+        tools:ignore="ManifestOrder" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

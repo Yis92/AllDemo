@@ -6,4 +6,13 @@
         <item name="colorAccent">#00CCFF</item>
     </style>
 
+    <!--进度条,如果要设置progress的高度，在较高的sdk版本中需要在style中设置-->
+    <style name="ProgressBarMini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:indeterminateOnly">false</item>
+
+        <item name="android:progressDrawable">@drawable/progress_bar_list</item>
+    </style>
+
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><!-- pop -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ll_pop_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,7 +23,8 @@
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:scaleType="fitXY"
-            android:src="@mipmap/red_close" />
+            android:src="@mipmap/red_close"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:textColor="#FEDEAD"
@@ -62,7 +64,8 @@
                 android:scaleType="fitXY"
                 android:src="@mipmap/xian"
                 android:layout_width="match_parent"
-                android:layout_height="40dp" />
+                android:layout_height="40dp"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/image"
@@ -70,7 +73,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:background="@drawable/image_animation_drawable"
-                />
+                tools:ignore="ContentDescription" />
 
         </RelativeLayout>
 

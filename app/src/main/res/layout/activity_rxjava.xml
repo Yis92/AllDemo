@@ -23,5 +23,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:text="123123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progressBar1"
+        style="@style/ProgressBarMini"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/iv_sign_one"
+        android:layout_alignTop="@+id/iv_sign_one"
+        android:layout_toLeftOf="@+id/iv_sign_ten"
+        android:max="10"
+        android:progress="4" />
+
 
 </LinearLayout>

@@ -161,6 +161,7 @@ public class HttpManager {
 
         Param[] paramsArr = map2Params(params);
         Request request = buildPostRequest(url, paramsArr);
+
         deliveryResult(callback, request);
     }
 
